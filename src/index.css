@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root{
+  --background-color:#eceff1;
+  --white:white;
+  --color-4:black;
+  --lightgray:#BABABA;
+  --blue:#113065;
+  --color-3:#FFFFFF;
+  --darkgray:#3C3C3C;
+  --lightlightgray:#F4F4F4;
+  --braun:#C6BCB2;
+}
+body{
+  background-color: var(--lightlightgray);
+}
+.App{
+  padding-top: 0.1em;
+  display: flexbox;
+}
+
+.socialMediaImages{
+  width: 2em;
+  height: 2em;
+  margin:0.5em;
+  cursor: pointer;
+}
+
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+
+

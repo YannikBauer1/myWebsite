@@ -1,0 +1,36 @@
+.active{
+    text-decoration: underline;
+}
+
+.flag{
+    height: 28px !important;
+    width: auto !important;
+}
+
+.jsBar{
+    width: 90%;
+}
+
+.pythonBar{
+    width: 70%;
+}
+
+.strapiBar{
+    width: 90%;
+}
+
+.postgresBar{
+    width: 60%;
+}
+
+.adobeBar{
+    width: 90%;
+}
+
+.reactBar{
+    width: 70%;
+}
+
+.pointer:hover{
+    cursor: pointer;
+}

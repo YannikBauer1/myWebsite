@@ -1,0 +1,172 @@
+{
+    "header": {
+        "title": "Yannik Bauer",
+        "image": null,
+        "links": [
+            {
+                "id": 1,
+                "name": "Main",
+                "url": "/",
+                "bodyId": 1
+            },
+            {
+                "id": 2,
+                "name": "About Me",
+                "url": "/aboutme",
+                "bodyId": 2
+            },
+            {
+                "id": 3,
+                "name": "Projects",
+                "url": "/projects",
+                "bodyId": 3
+            },
+            {
+                "id": 4,
+                "name": "Contact",
+                "url": "contact",
+                "bodyId": 4
+            }
+        ]
+    },
+    "body": [
+        {
+            "id": 1,
+            "linkId":1,
+            "type": "main",
+            "title": "I`m a\nSoftware Developer",
+            "description": "From front to back-end\nJS, Python, Java, Kotlin, ...",
+            "image": "main.png",
+            "buttons": [
+                {
+                    "name": "About Me",
+                    "url": "/aboutme"
+                },
+                {
+                    "name": "Contact me",
+                    "url": "/contact"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "linkId":2,
+            "type": "list",
+            "itmes": [
+                {
+                    "type": "imageText",
+                    "image": null,
+                    "title": null,
+                    "text": null
+                },
+                {
+                    "type": "table",
+                    "title": null,
+                    "col": [
+                        {
+                            "name": null,
+                            "image": null
+                        },
+                        {
+                            "name": null,
+                            "image": null
+                        },
+                        {
+                            "name": null,
+                            "image": null
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "title": null,
+                    "text": null
+                },
+                {
+                    "type": "table",
+                    "title": null,
+                    "col": [
+                        {
+                            "name": null,
+                            "image": null
+                        },
+                        {
+                            "name": null,
+                            "image": null
+                        },
+                        {
+                            "name": null,
+                            "image": null
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "title": null,
+                    "text": null
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "linkId":3,
+            "type": "boxes",
+            "items": [
+                {
+                    "image": "project.png",
+                    "title": null,
+                    "description": "Perview text dads. Nails lads asdkf las \nAsl dfaösldf aösd fals,d gaasdfa ösdflsaödlf lsöd\n Asdf sdf asdfsd",
+                    "url": "https://www.google.com/"
+                },
+                {
+                    "image": "project.png",
+                    "title": null,
+                    "description": "Perview text dads. Nails lads asdkf las\n Asl dfaösldf aösd fals,d gaasdfa ösdflsaödlf ösaldföa lsöd",
+                    "url": "https://www.google.com/"
+                },
+                {
+                    "image": "project.png",
+                    "title": null,
+                    "description": "Perview text dads. Nails lads las \nAsl dfaösldf aösd fals,d gaasdfa ösd \nAsdf sdf asdfsdas \nSd fasdfasd fsadfsdfsdf",
+                    "url": "https://www.google.com/"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "linkId":4,
+            "type": "contact"
+        }
+    ],
+    "footer": {
+        "textFields": [
+            {
+                "title": "Email",
+                "text": "yannikbauer.1@gmail.com"
+            }
+        ],
+        "links": [
+            {
+                "image": "github1.png",
+                "link": "https://github.com/YannikBauer1"
+            },
+            {
+                "image": "linkedin1.png",
+                "link": "https://www.linkedin.com/in/yannik-bauer-53259b233/"
+            }
+        ]
+    },
+    "bottom": {
+        "texts": [
+            {
+                "text":"Terms and Conditions"
+            },
+            {
+                "text":"Privacy Policy"
+            },
+            {
+                "text":"© 2023 Yannik Bauer"
+            }
+        ]
+    }
+}

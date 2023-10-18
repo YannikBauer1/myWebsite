@@ -1,0 +1,48 @@
+.bodyDiv{
+    margin-left: 300px;
+}
+
+.title{
+    position:relative;
+}
+
+.smallText{
+    font-size: small;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 10%;
+    bottom: 0;
+    height:3px;
+    width: 80%;
+    background-color: #000;
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    left: 45%;
+    bottom: 0;
+    height:5px;
+    width: 10%;
+    background-color: #000;
+}
+
+.description{
+    width: 400px;
+}
+
+.width1{
+    width: 500px;
+}
+
+.width2{
+    width: 600px;
+}
+
+.width3{
+    width: 80%;
+}
