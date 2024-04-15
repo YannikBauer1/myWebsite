@@ -1,0 +1,224 @@
+/* DIVS */
+.home {
+  min-height: 100vh;
+  padding-left: 0%;
+  padding-right: 4%;
+}
+.imageDiv{
+  max-width: 340px;
+  padding-bottom: 48px;
+  padding-left: 35px;
+  position: relative;
+  z-index: 2;
+}
+.imageDiv > * {
+  transition: transform 0.2s;
+  will-change: transform;
+}
+.imageInnerDiv{
+  max-width: 280px;
+}
+.informations{
+  max-width: 300px;
+}
+.colorBlock {
+  position: absolute;
+  top: 15%;
+  left: -5%;
+  width: 110%;
+  height: 70%;
+  z-index: -1;
+}
+
+
+
+/* Font-sizes, Texts */
+.smallButton{
+  padding: 0px 4px !important;
+  margin: 4px !important;
+  font-size: smaller !important;
+}
+.titleHome {
+  font-size: 60px;
+  line-height: 60px;
+  position: relative;
+}
+.textSign{
+  font-family: 'Brush Script MT';
+  padding-top: 3rem ;
+  padding-bottom: 3rem ;
+  font-size: 2.5rem;
+  padding-left: 3rem;
+}
+
+
+@media (min-width: 1200px) {
+  /* DIVS */
+  .imageDiv{
+    max-width: 400px;
+    padding-bottom: 48px;
+    padding-left: 70px;
+  }
+  .imageInnerDiv{
+    max-width: 350px;
+  }
+  .informations{
+    max-width: 330px;
+  }
+
+  /* Font-sizes, Texts */
+  .titleHome {
+    font-size: 65px;
+    line-height: 70px;
+  }
+  .smallButton{
+    padding: 0px 4px !important;
+    margin: 4px !important;
+    font-size: medium !important;
+  }
+}
+
+
+@media (min-width: 1400px) {
+  /* DIVS */
+  .imageDiv{
+    width: 30vw !important;
+    max-width: 1500px !important;
+    padding-bottom: 48px;
+    padding-left: 70px;
+  }
+  .imageInnerDiv{
+    max-width: 1500px !important;
+    width: 25vw !important;
+  }
+  .informations{
+    max-width: 1500px !important;
+    width: 29vw !important;
+  }
+
+  /* Font-sizes, Texts */
+  .titleHome {
+    font-size: 6vw !important;
+    line-height: 6vw !important;
+  }
+  .smallButton{
+    padding: 0px 0.3vw !important;
+    margin: 0.3vw !important;
+    font-size: 1.5vw !important;
+  }
+  .textSign{
+    font-size: 4vw !important;
+    padding-top: 3vw !important ;
+    padding-left: 3vw !important;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  /* DIVS */
+  .home {
+    min-height: 100vh;
+    padding-left: 4%;
+    padding-right: 4%;
+    justify-content: center;
+  }
+  .imageDiv{
+    max-width: 340px;
+    padding-bottom: 16px;
+    padding-left: 35px;
+  }
+  .imageInnerDiv{
+    max-width: 260px;
+  }
+  .informations{
+    max-width: 290px;
+  }
+
+  /* Font-sizes, Texts */
+  .textSign{
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+  }
+}
+
+
+@media (max-width: 768px) {
+  /* DIVS */
+  .home {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .imageDiv{
+    max-width: 330px;
+    padding-bottom: 0px !important;
+    padding-left: 35px;
+  }
+  .imageInnerDiv{
+    max-width: 240px;
+  }
+  .informations{
+    max-width: 240px;
+  }
+
+  /* Font-sizes, Texts */
+  .textSign{
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+  }
+  .titleHome {
+    font-size: 45px;
+    line-height: 45px;
+  }
+  .smallButton{
+    padding: 0px 4px !important;
+    margin: 2px !important;
+    font-size: 11px !important;
+  }
+}
+
+
+@media (max-width: 576px) {
+  /* DIVS */
+  .home {
+    padding-top:10vh !important;
+    padding-bottom: 10vh !important;
+  }
+  .imageDiv{
+    max-width: 1000px;
+    padding: 0px 50px !important;
+  }
+  .chipsDiv{
+    width: 350px;
+  }
+
+  /* Font-sizes, Texts */
+  .titleHome {
+    font-size: 35px !important;
+    line-height: 45px;
+  }
+  .smallButton{
+    padding: 0px 4px !important;
+    margin: 3px !important;
+    font-size: 15px !important;
+  }
+  .textSign{
+    font-size: 2rem !important;
+    padding-left: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+}
+
+
+@media (min-width: 576px) {
+  .titleHome::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    width: 30%;
+    background-color: #000;
+  }
+}

@@ -1,0 +1,54 @@
+.list-group {
+  flex: 1;
+}
+.linksDiv {
+  position: relative;
+}
+.linksDiv::before {
+  content: "";
+  position: absolute;
+  left: 10px;  
+  right: 10px;
+  top: 0;     
+  height: 3px; 
+  background-color: #000;
+}
+.linksBlock {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Font-size text */
+.menuTitle{
+  font-family:Helvetica, sans-serif;
+  width: 100px;
+}
+.symbol{
+  height: 90px !important;
+}
+
+
+@media (max-width: 1200px) {
+  /* Font-size text */
+  .symbol{
+    height: 110px !important;
+  }
+}
+
+
+/* Animation */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.4) rotate(360deg);
+  }
+}
+.linksBlock:hover i {
+  animation: pulse 1.5s alternate;
+}
