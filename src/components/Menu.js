@@ -13,7 +13,7 @@ function App() {
       <div className="pb-xl-5 pb-4 pt-3 d-flex justify-content-evenly fs-3 
                       text-primary">
           <div className='d-flex justify-content-center'>
-            <img src="images/y.png" className='symbol img-fluid'/>
+            <img src="images/y.png" className='symbol img-fluid' alt=""/>
           </div>
           <div className='menuTitle d-none d-xl-flex align-items-center lh-sm 
                           text-center'>

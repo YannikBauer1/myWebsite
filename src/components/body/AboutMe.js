@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 import './aboutme.css';
 import data from '../../data/data.json';
@@ -19,7 +19,7 @@ export default function AboutMe() {
           {data.aboutMe.skills.map(item => (
             <div className='imgCont3 rounded-circle bg-secondary shadow-sm 
               d-flex justify-content-center align-items-center mx-1 my-1'>
-              <img src={"images/" + item + ".png"} className='img-fluid' />
+              <img src={"images/" + item + ".png"} className='img-fluid' alt=""/>
             </div>
           ))}
         </div>
@@ -52,7 +52,7 @@ export default function AboutMe() {
                       d-flex justify-content-center align-items-center'>
                       <img
                         src={"images/" + item.locationImage}
-                        className='img-fluid'
+                        className='img-fluid' alt=""
                       />
                     </div>
                     <div className='fw-bolder ps-1 textMiddle'>
@@ -88,7 +88,7 @@ export default function AboutMe() {
                                 my-4 mx-auto'>
                               <img
                                 src={"images/" + item.locationImage}
-                                className='img-fluid' />
+                                className='img-fluid' alt=""/>
                             </div>
                             <div className=" p-1 mt-2 mx-2">
                               <div className='fw-bolder text-center'>
@@ -154,7 +154,7 @@ export default function AboutMe() {
                     data-bs-toggle="modal"
                     data-bs-target={`#exampleModal${index}`}>
                         <div className='imgCont4 d-flex justify-content-center align-items-center'>
-                          <img src={"images/" + item.locationImage} className='img-fluid' />
+                          <img src={"images/" + item.locationImage} className='img-fluid' alt=""/>
                         </div>
                         <div className='fw-bolder textMiddle ps-1'>
                           {item.title}
@@ -179,7 +179,7 @@ export default function AboutMe() {
                                   d-flex justify-content-center align-items-center 
                                    mx-auto mb-4'>
                                 <img
-                                  src={"images/" + img}
+                                  src={"images/" + img} alt=""
                                   className='img-fluid' />
                               </div>
                             )}

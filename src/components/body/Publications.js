@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import * as bootstrap from 'bootstrap';
 
 import './publications.css';

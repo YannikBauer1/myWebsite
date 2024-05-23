@@ -78,8 +78,8 @@ export default function Portfolio() {
                 <div id={`carouselExample${index}`} class="carousel slide">
                   <div class="carousel-inner">
                     {item.images.map((img, index) => (
-                      <div class={'carousel-item ' + (index == 0 ? "active" : "")}>
-                        <img src={"images/" + img} className='img-fluid' />
+                      <div class={'carousel-item ' + (index === 0 ? "active" : "")}>
+                        <img src={"images/" + img} className='img-fluid' alt="" />
                       </div>
                     ))}
                   </div>

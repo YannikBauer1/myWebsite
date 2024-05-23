@@ -68,7 +68,7 @@ export default function Home() {
                     justify-content-center">
           <div className='imageInnerDiv'>
             <div className='p-3 border border-black border-5' id="borderProfile">
-              <img src="images/profil.JPG" className='img-fluid' id="imageProfile"/>
+              <img src="images/profil.JPG" className='img-fluid' id="imageProfile" alt=""/>
             </div>
             <div className='colorBlock bg-primary' id="colorboxProfile"/>
           </div>
@@ -102,7 +102,7 @@ export default function Home() {
           <div className='imageDiv'>
             <div>
               <div className='p-3 border border-black border-5' id="borderProfile">
-                <img src="images/profil.JPG" className='img-fluid' id="imageProfile"/>
+                <img src="images/profil.JPG" className='img-fluid' id="imageProfile" alt=""/>
               </div>
               <div className='colorBlock bg-primary' id="colorboxProfile"/>
             </div>
