@@ -272,7 +272,7 @@
   "publications": [
     {
       "inProgress": true,
-      "title": "Assisted Generation of Porgramming Exercises using ChatGPT",
+      "title": "Creating Intuitive UX for Teachers in a VLE",
       "type": "Paper",
       "date": "In Progress",
       "pdf": "",
@@ -281,14 +281,14 @@
       "authorsComplete": "Yannik Bauer, José Paulo Leal, Ricardo Queirós"
     },
     {
-      "inProgress": true,
-      "title": "Improving Teachers UX in a VLE",
-      "type": "Paper",
-      "date": "In Progress",
-      "pdf": "",
-      "publisher": "",
+      "title": "Authoring Programming Exercises for Automated Assessment Assisted by Generative AI",
+      "type": "Short Paper",
+      "date": "25.09.2024",
+      "pdf": "https://drops.dagstuhl.de/storage/01oasics/oasics-vol122-icpec2024/OASIcs.ICPEC.2024.21/OASIcs.ICPEC.2024.21.pdf",
+      "publisher": "https://doi.org/10.4230/OASIcs.ICPEC.2024.21",
       "authors": "Y. Bauer, J.P. Leal, R. Queirós",
-      "authorsComplete": "Yannik Bauer, José Paulo Leal, Ricardo Queirós"
+      "authorsComplete": "Yannik Bauer, José Paulo Leal, Ricardo Queirós",
+      "abstract":"Generative AI presents both challenges and opportunities for educators. This paper explores its potential for automating the creation of programming exercises designed for automated assessment. Traditionally, creating these exercises is a time-intensive and error-prone task that involves developing exercise statements, solutions, and test cases. This ongoing research analyzes the capabilities of the OpenAI GPT API to automatically create these components. An experiment using the OpenAI GPT API to automatically create 120 programming exercises produced interesting results, such as the difficulties encountered in generating valid JSON formats and creating matching test cases for solution code. Learning from this experiment, an enhanced feature was developed to assist teachers in creating programming exercises and was integrated into Agni, a virtual learning environment (VLE). Despite the challenges in generating entirely correct programming exercises, this approach shows potential for reducing the time required to create exercises, thus significantly aiding teachers. The evaluation of this approach, comparing the efficiency and usefulness of using the OpenAI GPT API or authoring the exercises oneself, is in progress."
     },
     {
       "title": "Improving Teachers User Experience in a Virtual Learning Environment",
