@@ -64,13 +64,13 @@ export default function Home() {
   return (
     <div className='scrollspy-example' id="home">
       <div className='home d-none d-sm-flex justify-content-evenly'>
-        <div class="imageDiv me-5 me-sm-4 d-flex align-items-center 
-                    justify-content-center">
+        <div class="imageDiv me-5 me-sm-5 d-flex align-items-center 
+                    justify-content-center px-4">
           <div className='imageInnerDiv'>
             <div className='p-3 border border-black border-5' id="borderProfile">
-              <img src="images/profil.JPG" className='img-fluid' id="imageProfile" alt=""/>
+              <img src="images/profil.JPG" className='img-fluid' id="imageProfile" alt="" />
             </div>
-            <div className='colorBlock bg-primary' id="colorboxProfile"/>
+            <div className='colorBlock bg-primary' id="colorboxProfile" />
           </div>
         </div>
         <div class="informations pt-4 pt-sm-0 d-flex align-items-center 
@@ -82,10 +82,9 @@ export default function Home() {
             <div className='titleHome pb-3 mb-4 text-primary fw-bold'>
               Software Developer
             </div>
-            <div>
+            <div class="d-flex flex-wrap">
               {data.home.skills.map(item => (
-                <button type="button" class="smallButton btn btn-outline-primary" 
-                  disabled>{item}</button>
+                <div class="px-1 border border-1 border-primary m-1 rounded-3 text-primary chips">{item}</div>
               ))}
             </div>
             <div className='textSign'>
@@ -102,20 +101,16 @@ export default function Home() {
           <div className='imageDiv'>
             <div>
               <div className='p-3 border border-black border-5' id="borderProfile">
-                <img src="images/profil.JPG" className='img-fluid' id="imageProfile" alt=""/>
+                <img src="images/profil.JPG" className='img-fluid' id="imageProfile" alt="" />
               </div>
-              <div className='colorBlock bg-primary' id="colorboxProfile"/>
+              <div className='colorBlock bg-primary' id="colorboxProfile" />
             </div>
           </div>
         </div>
-        <div className='chipsDiv px-4 py-2 text-center'>
-          {data.home.skills.map(item => (
-            <button type="button" class="smallButton btn btn-outline-primary" 
-              disabled>{item}</button>
-          ))}
-        </div>
-        <div className='textSign py-2 text-center'>
-          Yannik Bauer
+        <div className='chipsDiv px-4 py-2 d-flex flex-wrap justify-content-center'>
+            {data.home.skills.map(item => (
+              <div class="px-1 border border-1 border-primary m-1 rounded-3 text-primary">{item}</div>
+            ))}
         </div>
       </div>
     </div>

@@ -26,7 +26,7 @@ export default function Publications() {
           {data.publications.map((item, index) =>
             <>
               <li
-                className={`timelineItem border bg-secondary border rounded-0 shadow-sm d-flex align-items-center ${item.inProgress ? '' : 'backgroundHover pointer'}`}
+                className={`timelineItem card_lg my-3 border bg-secondary border rounded-0 shadow-sm d-flex align-items-center ${item.inProgress ? '' : 'backgroundHover pointer'}`}
                 data-date={item.date}
                 {...!item.inProgress && {
                   'data-bs-toggle': "modal",
@@ -34,7 +34,7 @@ export default function Publications() {
                 }}
               >
                 {item.inProgress ? (<div className="progressBackground"></div>) : (<></>)}
-                <div class="textMiddle fw-bolder">{item.title}</div>
+                <div class="textMiddle twoLines">{item.title}</div>
                 <div className='position-absolute bg-primary text-light smallText px-1 dateBox2 d-flex justify-content-center'>
                   {item.type}
                 </div>

@@ -1,5 +1,6 @@
 .bodyDiv {
     margin-left: 23.5%;
+    padding: 0 80px;
 }
 
 .menu {
@@ -80,7 +81,7 @@
 }
 
 .smallText {
-    font-size: small;
+    font-size: 12px;
 }
 
 .smallerText {
@@ -88,7 +89,7 @@
 }
 
 .textMiddle {
-    font-size: large;
+    font-size: 20px;
 }
 
 .textMedium {
@@ -100,7 +101,7 @@
         font-size: small;
     }
     .textMiddle {
-        font-size: 11.8px;
+        font-size: 16px;
     }
     .smallText {
         font-size: xx-small !important;
@@ -111,10 +112,10 @@
     content: "";
     position: absolute;
     top: 0;
-    left: 10%;
+    left: 0;
     bottom: 0;
     height: 3px;
-    width: 80%;
+    width: 100%;
     background-color: #000;
 }
 
@@ -169,4 +170,16 @@
     .width4 {
         width: 80%;
     }
+    .bodyDiv {
+        margin-left: 0px;
+        padding: 0 12px;
+    }
+}
+
+
+.card_s{
+    height: 60px;
+}
+.card_lg{
+    height: 80px;
 }

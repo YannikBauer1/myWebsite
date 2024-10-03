@@ -1,31 +1,27 @@
-.active {
-    text-decoration: underline;
-}
 
-.skillsBox {
-    width: 95%;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
 
-.aboutMeListItem{
-    padding-left: 1.5rem !important;
+.skill_divs:hover{
+    transform: scale(1.15);
+    transition: transform 0.3s ease;
 }
 
 .titlePopUp{
     font-size: calc(1.275rem + 0.3vw);
 }
+.linkText{
+    font-size: 20px !important;
+}
 
 @media (max-width: 576px) {
+    .linkText{
+        font-size: 16px !important;
+    }
     .titlePopUp{
         font-size: large !important;
     }
     .skillsBox {
         width: 300px;
         flex-wrap: wrap;
-    }
-    .aboutMeListItem{
-        padding: 4px 8px !important;
     }
     .imgCont4 {
         height: 40px !important;
@@ -38,6 +34,11 @@
     }
     .dateBox {
         width: 70px !important;
+        top: 1px;
+        right: 1px;
+    }
+    .dateBox2 {
+        width: 80px !important;
         top: 1px;
         right: 1px;
     }

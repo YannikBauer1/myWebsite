@@ -1,13 +1,10 @@
 /* DIVS */
 .home {
   min-height: 100vh;
-  padding-left: 0%;
-  padding-right: 4%;
 }
 .imageDiv{
   max-width: 340px;
   padding-bottom: 48px;
-  padding-left: 35px;
   position: relative;
   z-index: 2;
 }
@@ -57,7 +54,6 @@
   .imageDiv{
     max-width: 400px;
     padding-bottom: 48px;
-    padding-left: 70px;
   }
   .imageInnerDiv{
     max-width: 350px;
@@ -85,7 +81,6 @@
     width: 30vw !important;
     max-width: 1500px !important;
     padding-bottom: 48px;
-    padding-left: 70px;
   }
   .imageInnerDiv{
     max-width: 1500px !important;
@@ -118,20 +113,21 @@
   /* DIVS */
   .home {
     min-height: 100vh;
-    padding-left: 4%;
-    padding-right: 4%;
     justify-content: center;
+  }
+  .chips{
+    font-size: 13px;
   }
   .imageDiv{
     max-width: 340px;
     padding-bottom: 16px;
-    padding-left: 35px;
-  }
-  .imageInnerDiv{
-    max-width: 260px;
   }
   .informations{
     max-width: 290px;
+  }
+  .titleHome {
+    font-size: 45px;
+    line-height: 45px;
   }
 
   /* Font-sizes, Texts */
@@ -144,30 +140,17 @@
 
 @media (max-width: 768px) {
   /* DIVS */
-  .home {
-    padding-left: 2%;
-    padding-right: 2%;
-  }
   .imageDiv{
     max-width: 330px;
     padding-bottom: 0px !important;
-    padding-left: 35px;
-  }
-  .imageInnerDiv{
-    max-width: 240px;
   }
   .informations{
-    max-width: 240px;
   }
 
   /* Font-sizes, Texts */
   .textSign{
     padding-top: 12px !important;
     padding-bottom: 12px !important;
-  }
-  .titleHome {
-    font-size: 45px;
-    line-height: 45px;
   }
   .smallButton{
     padding: 0px 4px !important;
