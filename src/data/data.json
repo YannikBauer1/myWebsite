@@ -10,15 +10,18 @@
     "contacts": [
       {
         "href": "mailto:yannikbauer.1@gmail.com",
-        "icon": "bi-envelope-fill"
+        "icon": "bi-envelope-fill",
+        "description": "email"
       },
       {
         "href": "https://github.com/YannikBauer1",
-        "icon": "bi-github"
+        "icon": "bi-github",
+        "description": "github"
       },
       {
         "href": "https://www.linkedin.com/in/yannik-bauer-53259b233/",
-        "icon": "bi-linkedin"
+        "icon": "bi-linkedin",
+        "description": "linkedin"
       }
     ]
   },
