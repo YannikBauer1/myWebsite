@@ -22,10 +22,10 @@ export default function Publications() {
       <div className="fs-1 text-center title pt-5 mt-5 pb-3 fw-semibold text-primary">
         PUBLICATIONS
       </div>
-      <div className="mt-4">
-        <ul class="text-black timeline pe-0 pt-0 pb-0">
+      <div className="mt-4 pt-1">
+        <ul className="text-black timeline pe-0 pt-0 pb-0">
           {data.publications.map((item, index) => (
-            <>
+            <React.Fragment key={index}>
               <li
                 className={`timelineItem custom_card my_card border bg-secondary border rounded-0 shadow-sm d-flex align-items-center ${
                   item.inProgress ? "" : "backgroundHover pointer"
@@ -41,21 +41,21 @@ export default function Publications() {
                 ) : (
                   <></>
                 )}
-                <div class="textMiddle text-truncate">{item.title}</div>
+                <div className="textMiddle text-truncate">{item.title}</div>
                 <div className="position-absolute bg-primary text-light smallText px-1 dateBox2 d-flex justify-content-center">
                   {item.type}
                 </div>
               </li>
               <div
-                class="modal fade"
+                className="modal fade"
                 id={`exampleModal2${index}`}
-                tabindex="-1"
+                tabIndex="-1"
                 aria-labelledby="exampleModalLabel"
                 aria-hidden="true"
               >
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-body p-0">
+                <div className="modal-dialog">
+                  <div className="modal-content">
+                    <div className="modal-body p-0">
                       <div className="bg-primary text-light fs-4 fw-bold py-2 px-4">
                         {item.title}
                       </div>
@@ -109,7 +109,7 @@ export default function Publications() {
                   </div>
                 </div>
               </div>
-            </>
+            </React.Fragment>
           ))}
         </ul>
       </div>

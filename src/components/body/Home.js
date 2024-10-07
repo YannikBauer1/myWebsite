@@ -64,7 +64,7 @@ export default function Home() {
     <div className="scrollspy-example" id="home">
       <div className="home d-none d-sm-flex justify-content-evenly">
         <div
-          class="imageDiv me-4 d-flex align-items-center 
+          className="imageDiv me-4 d-flex align-items-center 
                     justify-content-center px-3"
         >
           <div className="imageInnerDiv">
@@ -85,7 +85,7 @@ export default function Home() {
           </div>
         </div>
         <div
-          class="informations pt-4 pt-sm-0 d-flex align-items-center 
+          className="informations pt-4 pt-sm-0 d-flex align-items-center 
                     justify-content-center flex-column"
         >
           <div className="text-start">
@@ -93,9 +93,9 @@ export default function Home() {
             <div className="titleHome pb-3 mb-4 text-primary fw-bold">
               Software Developer
             </div>
-            <div class="d-flex flex-wrap">
-              {data.home.skills.map((item) => (
-                <div class="px-1 border border-1 border-primary m-1 rounded-3 text-primary chips">
+            <div className="d-flex flex-wrap">
+              {data.home.skills.map((item, index) => (
+                <div key={index} className="px-1 border border-1 border-primary m-1 rounded-3 text-primary chips">
                   {item}
                 </div>
               ))}
@@ -116,8 +116,8 @@ export default function Home() {
           </div>
         </div>
         <div className="chipsDiv mb-4 px-4 d-flex flex-wrap justify-content-center">
-          {data.home.skills.map((item) => (
-            <div class="px-1 border border-1 border-primary m-1 rounded-3 text-primary fs-6_5">
+          {data.home.skills.map((item, index) => (
+            <div key={index} className="px-1 border border-1 border-primary m-1 rounded-3 text-primary fs-6_5">
               {item}
             </div>
           ))}

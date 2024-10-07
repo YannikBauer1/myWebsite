@@ -69,37 +69,37 @@ export default function Portfolio() {
       </div>
       <div className="mt-4 pt-2 d-flex negativeMargin justify-content-center flex-wrap flex-sm-nowrap">
         {items.map((item, index) => (
-          <div
-            class={
+          <div key={index}
+            className={
               "text-bg-secondary border-0 portfolioCard m-2 shadow-sm rounded-0 p-2 position-relative d-flex align-items-center " +
               (index % 2 === 0 ? "" : "")
             }
           >
-            <div id={`carouselExample${index}`} class="carousel slide">
-              <div class="carousel-inner">
+            <div id={`carouselExample${index}`} className="carousel slide">
+              <div className="carousel-inner">
                 {item.images.map((img, index) => (
-                  <div class={"carousel-item " + (index === 0 ? "active" : "")}>
+                  <div className={"carousel-item " + (index === 0 ? "active" : "")} key={index}>
                     <img src={"images/" + img} className="img-fluid" alt="" />
                   </div>
                 ))}
               </div>
               <button
-                class="carousel-control-prev"
+                className="carousel-control-prev"
                 type="button"
                 data-bs-target={`#carouselExample${index}`}
                 data-bs-slide="prev"
               >
-                <span class="carousel-control-prev-icon" aria-hidden="true" />
-                <span class="visually-hidden">Previous</span>
+                <span className="carousel-control-prev-icon" aria-hidden="true" />
+                <span className="visually-hidden">Previous</span>
               </button>
               <button
-                class="carousel-control-next"
+                className="carousel-control-next"
                 type="button"
                 data-bs-target={`#carouselExample${index}`}
                 data-bs-slide="next"
               >
-                <span class="carousel-control-next-icon" aria-hidden="true" />
-                <span class="visually-hidden">Next</span>
+                <span className="carousel-control-next-icon" aria-hidden="true" />
+                <span className="visually-hidden">Next</span>
               </button>
             </div>
           </div>

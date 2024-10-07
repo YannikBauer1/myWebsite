@@ -39,10 +39,10 @@ function App() {
         ))}
       </div>
       <div className='linksDiv pt-4 pb-0 d-flex justify-content-evenly'>
-        {data.menu.contacts.map(item => (
-          <a href={item.href} target="_blank" rel="noopener noreferrer" aria-label={item.description}>
+        {data.menu.contacts.map((item, index) => (
+          <a href={item.href} target="_blank" rel="noopener noreferrer" aria-label={item.description} key={index}>
             <div className='p-1 border border-black linksBlock'>
-              <i class={'bi ' + item.icon}></i>
+              <i className={'bi ' + item.icon}></i>
             </div>
           </a>
         ))}

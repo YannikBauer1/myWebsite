@@ -16,7 +16,7 @@ export default function Main() {
       <div className="menu menuWidth p-4">
         <Menu />
       </div>
-      <div class="d-flex d-sm-none bg-primary position-fixed w-100 text-white shadow p-2 px-3 rounded-bottom index justify-content-between align-items-center">
+      <div className="d-flex d-sm-none bg-primary position-fixed w-100 text-white shadow py-3 px-3 rounded-bottom index justify-content-between align-items-center">
         <div className="w-25">
           <img
             src="images/y.png"
@@ -28,15 +28,16 @@ export default function Main() {
         </div>
         <div>Yannik Bauer</div>
         <div className="w-25 d-flex justify-content-end">
-          {data.menu.contacts.map((item) => (
+          {data.menu.contacts.map((item, index) => (
             <a
               href={item.href}
               target="_blank"
               rel="noopener noreferrer"
               aria-label={item.description}
               className="text-white mx-1 fs-6_5"
+              key={index}
             >
-              <i class={"bi " + item.icon}></i>
+              <i className={"bi " + item.icon}></i>
             </a>
           ))}
         </div>
@@ -46,7 +47,7 @@ export default function Main() {
         data-bs-spy="scroll"
         data-bs-target="#menuList"
         data-bs-smooth-scroll="true"
-        tabindex="0"
+        tabIndex="0"
       >
         <Home />
         <AboutMe />
