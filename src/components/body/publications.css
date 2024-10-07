@@ -1,13 +1,19 @@
 .timeline {
-    border-left: 3px solid #000000;
+    border-left: 2px solid #000000;
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
     margin: 0 auto;
-    margin-left: 120px;
+    margin-left: 100px;
     position: relative;
-    padding: 50px;
+    padding: 24px;
     list-style: none;
     text-align: left;
+}
+
+.custom_card{
+    margin:12px 0px !important;
+    padding-right: 100px !important;
+    padding-left: 12px !important;
 }
 
 .twoLines{
@@ -17,8 +23,7 @@
 
 .timelineItem {
     position: relative;
-    padding-right: 3rem;
-    padding-left: 1rem;
+    padding: 0 16px;
 }
 
 .timelineItem:before,
@@ -37,35 +42,34 @@
         padding: 16px 8px !important;
     }
     .timelineItem:after {
-        height: 8px !important;
-        width: 8px !important;
-        left: -26px !important;
+        height: 5px !important;
+        width: 5px !important;
+        left: -25px !important;
     }
     .timeline {
         border-left: 2px solid #000000 !important;
-        margin-left: 25% !important;
         padding: 20px !important;
+        margin-left: 75px !important;
     }
     .timelineItem {
         margin-bottom: 25px;
         position: relative;
-        padding-bottom:4px !important;
-        padding-top: 6px !important;
+        padding-bottom:0px !important;
+        padding-top: 0px !important;
         padding-right: 3rem;
         padding-left: 1rem;
         font-size: x-small;
     }
     .timelineItem:before {
-        left: -160px !important;
-        content: attr(data-date);
-        text-align: right;
-        min-width: 120px;
+        left: -155px !important;
+        font-size: 10px !important;
     }
 }
 
 .timelineItem:before {
-    left: -195px;
-    top:30px;
+    left: -165px;
+    color:#000000;
+    top:15px;
     content: attr(data-date);
     text-align: right;
     min-width: 120px;
@@ -77,13 +81,13 @@
 .timelineItem:after {
     -webkit-box-shadow: 0 0 0 3px #000000;
     box-shadow: 0 0 0 3px #000000;
-    left: -59px;
+    left: -30px;
     background: #000000;
     border-radius: 50%;
-    height: 12px;
-    width: 12px;
+    height: 8px;
+    width: 8px;
     content: "";
-    top: 35px;
+    top: 20px;
 }
 
 .progressBackground {

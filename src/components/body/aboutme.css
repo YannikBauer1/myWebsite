@@ -1,115 +1,131 @@
-
-
-.skill_divs:hover{
-    transform: scale(1.15);
-    transition: transform 0.3s ease;
+.skill_divs:hover {
+  transform: scale(1.15);
+  transition: transform 0.3s ease;
 }
 
-.titlePopUp{
-    font-size: calc(1.275rem + 0.3vw);
+.titlePopUp {
+  font-size: calc(1.275rem + 0.3vw);
 }
-.linkText{
-    font-size: 20px !important;
+.linkText {
+  font-size: 20px !important;
+}
+.custom_card_2{
+  padding: 0px 12px !important;
 }
 
 @media (max-width: 576px) {
-    .linkText{
-        font-size: 16px !important;
+  .linkText {
+    font-size: 16px !important;
+  }
+  .titlePopUp {
+    font-size: large !important;
+  }
+  .skillsBox {
+    width: 300px;
+    flex-wrap: wrap;
+  }
+  .cardIcons {
+    height: 40px !important;
+    width: 40px !important;
+  }
+  .imgCont6 {
+    height: 60px !important;
+    width: 60px !important;
+  }
+  .dateBox {
+    width: 70px !important;
+    top: 1px;
+    right: 1px;
+  }
+  .dateBox2 {
+    width: 80px !important;
+    top: 1px;
+    right: 1px;
+  }
+  .imgCont7 {
+    height: auto;
+    width: 55px !important;
+  }
+
+  .test{
+    position: relative;
+    overflow: hidden;
+  }
+  .scrolling-content {
+    display: flex;
+    animation: scroll 5s linear infinite;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
     }
-    .titlePopUp{
-        font-size: large !important;
+    50% {
+      transform: translateX(calc((504px - (100vw - 24px)) * -1));
     }
-    .skillsBox {
-        width: 300px;
-        flex-wrap: wrap;
+    100% {
+      transform: translateX(0);
     }
-    .imgCont4 {
-        height: 40px !important;
-        width: 40px !important;
-        margin-right: 4px !important;
-    }
-    .imgCont6 {
-        height: 60px !important;
-        width: 60px !important;
-    }
-    .dateBox {
-        width: 70px !important;
-        top: 1px;
-        right: 1px;
-    }
-    .dateBox2 {
-        width: 80px !important;
-        top: 1px;
-        right: 1px;
-    }
-    .imgCont3 {
-        height: 45px !important;
-        width: 45px !important;
-        padding: 8px !important;
-    }
-    .imgCont7 {
-        height: auto;
-        width: 55px !important;
-    }
+  }
 }
 
 .dateBox {
-    width: 90px;
-    top: 1px;
-    right: 1px;
+  width: 90px;
+  top: 1px;
+  right: 1px;
 }
 
 .dateBox2 {
-    width: 100px;
-    top: 1px;
-    right: 1px;
+  width: 100px;
+  top: 1px;
+  right: 1px;
 }
 
 .imgCont3 {
-    height: 55px;
-    width: 55px;
-    padding: 10px;
+  height: 48px;
+  width: 48px;
+  min-width: 48px;
+  padding: 8px;
 }
 
-.imgCont4 {
-    height: 60px;
-    width: 60px;
-    margin-right: 1.5rem;
+.cardIcons {
+  height: 44px;
+  width: 44px;
 }
 
 .imgCont5 {
-    height: 44px;
-    width: 44px;
+  height: 44px;
+  width: 44px;
 }
 
 .imgCont6 {
-    height: 90px;
-    width: 90px;
+  height: 90px;
+  width: 90px;
 }
 
 .imgCont7 {
-    height: auto;
-    width: 90px;
+  height: auto;
+  width: 90px;
 }
 
 .lineTop::before {
-    content: "";
-    position: absolute;
-    top: -4px;
-    left: 35%;
-    right: 35%;
-    height: 1.5px;
-    background-color: black;
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 35%;
+  right: 35%;
+  height: 1.5px;
+  background-color: black;
 }
 
 .lineTop {
-    position: relative;
+  position: relative;
 }
 
 .linksBlock2 {
-    width: 35px;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -1,6 +1,6 @@
 .portfolioCard{
-  height: 300px;
-  width: 260px;
+  max-width: 300px;
+  min-width: 160px;
 }
 
 .blueBar2{
@@ -22,7 +22,8 @@
 
 @media (max-width: 576px) {
   .portfolioCard{
-    width: 360px;
+    max-width: 220px;
+    min-width: 160px;
   }
   .blueBar2{
     right:-5%;

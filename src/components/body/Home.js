@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
-import './home.css';
-import data from '../../data/data.json';
+import "./home.css";
+import data from "../../data/data.json";
 
 export default function Home() {
-
   const [xCenter, setxCenter] = useState(0);
   const [yCenter, setyCenter] = useState(0);
 
@@ -52,67 +51,96 @@ export default function Home() {
       }
     };
 
-    document.addEventListener('mousemove', handleMouseMove);
-    document.addEventListener('mouseleave', handleMouseLeave);
+    document.addEventListener("mousemove", handleMouseMove);
+    document.addEventListener("mouseleave", handleMouseLeave);
 
     return () => {
-      document.removeEventListener('mousemove', handleMouseMove);
-      document.removeEventListener('mouseleave', handleMouseLeave);
+      document.removeEventListener("mousemove", handleMouseMove);
+      document.removeEventListener("mouseleave", handleMouseLeave);
     };
   }, [xCenter, yCenter]);
 
   return (
-    <div className='scrollspy-example' id="home">
-      <div className='home d-none d-sm-flex justify-content-evenly'>
-        <div class="imageDiv me-5 me-sm-5 d-flex align-items-center 
-                    justify-content-center px-4">
-          <div className='imageInnerDiv'>
-            <div className='p-3 border border-black border-5' id="borderProfile">
-              <img src="images/profil.JPG" className='img-fluid' id="imageProfile" alt="" />
+    <div className="scrollspy-example" id="home">
+      <div className="home d-none d-sm-flex justify-content-evenly">
+        <div
+          class="imageDiv me-4 d-flex align-items-center 
+                    justify-content-center px-3"
+        >
+          <div className="imageInnerDiv">
+            <div
+              className="p-3 border border-black border-5"
+              id="borderProfile"
+            >
+              <img
+                src="images/profil.JPG"
+                className="img-fluid"
+                id="imageProfile"
+                alt="Yannik Bauer"
+                loading="eager"
+                title="Yannik Bauer"
+              />
             </div>
-            <div className='colorBlock bg-primary' id="colorboxProfile" />
+            <div className="colorBlock bg-primary" id="colorboxProfile" />
           </div>
         </div>
-        <div class="informations pt-4 pt-sm-0 d-flex align-items-center 
-                    justify-content-center flex-column">
-          <div className='text-start'>
-            <div className='fs-3 text-primary fw-bold'>
-              I'm a
-            </div>
-            <div className='titleHome pb-3 mb-4 text-primary fw-bold'>
+        <div
+          class="informations pt-4 pt-sm-0 d-flex align-items-center 
+                    justify-content-center flex-column"
+        >
+          <div className="text-start">
+            <div className="fs-3 text-primary fw-bold">I'm a</div>
+            <div className="titleHome pb-3 mb-4 text-primary fw-bold">
               Software Developer
             </div>
             <div class="d-flex flex-wrap">
-              {data.home.skills.map(item => (
-                <div class="px-1 border border-1 border-primary m-1 rounded-3 text-primary chips">{item}</div>
+              {data.home.skills.map((item) => (
+                <div class="px-1 border border-1 border-primary m-1 rounded-3 text-primary chips">
+                  {item}
+                </div>
               ))}
             </div>
-            <div className='textSign'>
-              Yannik Bauer
-            </div>
+            <div className="textSign">Yannik Bauer</div>
           </div>
         </div>
       </div>
 
-
-      <div className='home d-flex d-sm-none align-items-center flex-column
-                      justify-content-evenly'>
-        <div className='px-3 py-2'>
-          <div className='imageDiv'>
-            <div>
-              <div className='p-3 border border-black border-5' id="borderProfile">
-                <img src="images/profil.JPG" className='img-fluid' id="imageProfile" alt="" />
-              </div>
-              <div className='colorBlock bg-primary' id="colorboxProfile" />
-            </div>
+      <div
+        className="homeXS d-flex d-sm-none align-items-center flex-column justify-content-center
+                      "
+      >
+        <div className="px-3 mb-4 d-flex flex-column align-items-center">
+          <div className="fs-6 text-primary fw-bold">I'm a</div>
+          <div className="text-primary fw-bold fs-1 titleHome pb-2">
+            Software Developer
           </div>
         </div>
-        <div className='chipsDiv px-4 py-2 d-flex flex-wrap justify-content-center'>
-            {data.home.skills.map(item => (
-              <div class="px-1 border border-1 border-primary m-1 rounded-3 text-primary">{item}</div>
-            ))}
+        <div className="chipsDiv mb-4 px-4 d-flex flex-wrap justify-content-center">
+          {data.home.skills.map((item) => (
+            <div class="px-1 border border-1 border-primary m-1 rounded-3 text-primary fs-6_5">
+              {item}
+            </div>
+          ))}
         </div>
+        <div className="imageDiv mb-4">
+            <div>
+              <div
+                className="p-3 border border-black border-5"
+                id="borderProfile"
+              >
+                <img
+                  src="images/profil.JPG"
+                  className="img-fluid"
+                  id="imageProfile"
+                  alt="Yannik Bauer"
+                  loading="eager"
+                  title="Yannik Bauer"
+                />
+              </div>
+              <div className="colorBlock bg-primary" id="colorboxProfile" />
+            </div>
+          </div>
       </div>
     </div>
-  )
+  );
 }

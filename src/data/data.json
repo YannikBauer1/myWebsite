@@ -4,8 +4,7 @@
       "HOME",
       "ABOUT ME",
       "PORTFOLIO",
-      "PUBLICATIONS",
-      "CONTACT"
+      "PUBLICATIONS"
     ],
     "contacts": [
       {
@@ -39,12 +38,18 @@
     ]
   },
   "aboutMe": {
-    "skills" : [
-      "vue", "react", "nodejs",
-      "germany", "portugal", "states",
-      "python", "postgres", "adobexd"
+    "skills": [
+      "vue",
+      "react",
+      "nodejs",
+      "germany",
+      "portugal",
+      "states",
+      "python",
+      "postgres",
+      "adobexd"
     ],
-    "educations" : [
+    "educations": [
       {
         "title": "English as a Second Language",
         "completeTitle": "ESL - English as a second language",
@@ -178,19 +183,22 @@
         }
       }
     ],
-    "experiences" : [
+    "experiences": [
       {
         "title": "FGPE++ Gamified Programming Learning",
         "type": "Research Grant",
         "completeTitle": "FGPE++ Gamified Programming Learning - Research Grant",
         "location": "Inesc Tec",
         "locationImage": "inescTec.png",
-        "images": ["inescTec.png", "fcup.png"],
+        "images": [
+          "inescTec.png",
+          "fcup.png"
+        ],
         "time": "2022 - 2023",
         "timeComplete": "Mai 2022 - Mai 2023",
         "details": {
           "description": "The project aims is to provide a framework for application of gamification to programming education, including the specifications, collection of gamified exercises and software.",
-          "material":[
+          "material": [
             "Created back-end and teacher's front-end for Agni, a virtual learning environment for JavaScript learning (VueJS, Strapi)",
             "Integrated ChatGPT for assisted exercise creation in Agni",
             "Integrated AuthorKit, an external exercise repository",
@@ -206,7 +214,10 @@
         "completeTitle": "Safe Cities - Research Grant",
         "location": "Faculty Science, University of Porto & Bosch",
         "locationImage": "bosch.png",
-        "images": ["bosch.png", "fcup.png"],
+        "images": [
+          "bosch.png",
+          "fcup.png"
+        ],
         "time": "2022",
         "timeComplete": "March 2022 - Mai 2022",
         "details": {
@@ -222,7 +233,14 @@
         "type": "Holiday Jobs / Student Jobs",
         "title": "Fabric, Construction, Tutoring, Selling",
         "time": "2014-2021",
-        "images": ["joyson.png", "siemens.png", "bömmel.png", "nachhilfe.png", "zf.png", "skf.png"],
+        "images": [
+          "joyson.png",
+          "siemens.png",
+          "bömmel.png",
+          "nachhilfe.png",
+          "zf.png",
+          "skf.png"
+        ],
         "description": "Fabric: SKF, ZF, Siemens AG, Joyson PlasTic GmbH \n Construction: Bömmel Bau \n Tutoring: Math, Physics, Informatics",
         "locationImage": "holiday.png",
         "details": {
@@ -291,7 +309,7 @@
       "publisher": "https://doi.org/10.4230/OASIcs.ICPEC.2024.21",
       "authors": "Y. Bauer, J.P. Leal, R. Queirós",
       "authorsComplete": "Yannik Bauer, José Paulo Leal, Ricardo Queirós",
-      "abstract":"Generative AI presents both challenges and opportunities for educators. This paper explores its potential for automating the creation of programming exercises designed for automated assessment. Traditionally, creating these exercises is a time-intensive and error-prone task that involves developing exercise statements, solutions, and test cases. This ongoing research analyzes the capabilities of the OpenAI GPT API to automatically create these components. An experiment using the OpenAI GPT API to automatically create 120 programming exercises produced interesting results, such as the difficulties encountered in generating valid JSON formats and creating matching test cases for solution code. Learning from this experiment, an enhanced feature was developed to assist teachers in creating programming exercises and was integrated into Agni, a virtual learning environment (VLE). Despite the challenges in generating entirely correct programming exercises, this approach shows potential for reducing the time required to create exercises, thus significantly aiding teachers. The evaluation of this approach, comparing the efficiency and usefulness of using the OpenAI GPT API or authoring the exercises oneself, is in progress."
+      "abstract": "Generative AI presents both challenges and opportunities for educators. This paper explores its potential for automating the creation of programming exercises designed for automated assessment. Traditionally, creating these exercises is a time-intensive and error-prone task that involves developing exercise statements, solutions, and test cases. This ongoing research analyzes the capabilities of the OpenAI GPT API to automatically create these components. An experiment using the OpenAI GPT API to automatically create 120 programming exercises produced interesting results, such as the difficulties encountered in generating valid JSON formats and creating matching test cases for solution code. Learning from this experiment, an enhanced feature was developed to assist teachers in creating programming exercises and was integrated into Agni, a virtual learning environment (VLE). Despite the challenges in generating entirely correct programming exercises, this approach shows potential for reducing the time required to create exercises, thus significantly aiding teachers. The evaluation of this approach, comparing the efficiency and usefulness of using the OpenAI GPT API or authoring the exercises oneself, is in progress."
     },
     {
       "title": "Improving Teachers User Experience in a Virtual Learning Environment",

@@ -10,12 +10,12 @@ function App() {
 
   return (
     <>
-      <div className="pb-xl-5 pb-4 pt-3 d-flex justify-content-evenly fs-3 
+      <div className="pb-4 mb-2 pt-3 d-flex justify-content-evenly fs-4 
                       text-primary">
           <div className='d-flex justify-content-center'>
-            <img src="images/y.png" className='symbol img-fluid' alt=""/>
+            <img src="images/y.png" className='symbol img-fluid' alt="Yannik Bauer Icon" loading="eager" title="Yannik Bauer Icon"/>
           </div>
-          <div className='menuTitle d-none d-xl-flex align-items-center lh-sm 
+          <div className='menuTitle d-flex align-items-center
                           text-center'>
             Yannik Bauer
           </div>
@@ -38,7 +38,7 @@ function App() {
           </a>
         ))}
       </div>
-      <div className='linksDiv pt-4 pb-1 d-flex justify-content-evenly'>
+      <div className='linksDiv pt-4 pb-0 d-flex justify-content-evenly'>
         {data.menu.contacts.map(item => (
           <a href={item.href} target="_blank" rel="noopener noreferrer" aria-label={item.description}>
             <div className='p-1 border border-black linksBlock'>

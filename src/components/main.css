@@ -79,6 +79,9 @@
 .title {
     position: relative;
 }
+.title2 {
+    position: relative;
+}
 
 .smallText {
     font-size: 12px;
@@ -109,6 +112,17 @@
 }
 
 .title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+}
+
+.title2::before {
     content: "";
     position: absolute;
     top: 0;
@@ -177,9 +191,24 @@
 }
 
 
-.card_s{
-    height: 60px;
+.my_card{
+    height: 48px;
+    margin: 6px 0px;
 }
-.card_lg{
-    height: 80px;
+
+.fs-7{
+    font-size: 12px;
+}
+
+.fs-6_5{
+    font-size: 14px;
+}
+
+.appbar{
+    height: 24px;
+    width: 24px;
+}
+
+.index{
+    z-index: 1000;
 }

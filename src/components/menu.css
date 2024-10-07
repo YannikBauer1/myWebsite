@@ -28,16 +28,10 @@
   width: 100px;
 }
 .symbol{
-  height: 90px !important;
+  height: 80px !important;
 }
 
 
-@media (max-width: 1200px) {
-  /* Font-size text */
-  .symbol{
-    height: 110px !important;
-  }
-}
 
 
 /* Animation */
