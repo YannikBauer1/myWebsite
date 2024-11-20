@@ -1,0 +1,214 @@
+.bodyDiv {
+    margin-left: 23.5%;
+    padding: 0 80px;
+}
+
+.menu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    max-width: 350px;
+    z-index: 1000;
+    height: 100%;
+}
+
+.menu::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: #000;
+}
+
+/*
+  min-width: 200px;
+
+@media (max-width: 992px) {
+  .menuWidth {
+    width:200px;
+  }
+}*/
+
+.menuWidth {
+    width: 23.5%;
+}
+
+.modal-dialog {
+    max-width: 650px !important;
+
+}
+
+@media (min-width: 1400px) {
+    .menuWidth {
+        width: 22vw !important;
+        max-width: 22vw !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .bodyDiv {
+        margin-left: 0px;
+    }
+    .menu{
+        display: none !important;
+    }
+}
+
+
+.pointer:hover {
+    cursor: pointer;
+}
+
+.backgroundHover:hover {
+    background-color: #dee2e6 !important;
+}
+
+.width20 {
+    width: 20%;
+}
+
+.width80 {
+    width: 80%;
+}
+
+.title {
+    position: relative;
+}
+.title2 {
+    position: relative;
+}
+
+.smallText {
+    font-size: 12px;
+}
+
+.smallerText {
+    font-size: x-small;
+}
+
+.textMiddle {
+    font-size: 20px;
+}
+
+.textMedium {
+    font-size: medium;
+}
+
+@media (max-width: 576px) {
+    .textMedium {
+        font-size: small;
+    }
+    .textMiddle {
+        font-size: 16px;
+    }
+    .smallText {
+        font-size: xx-small !important;
+    }
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+}
+
+.title2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    left: 45%;
+    bottom: 0;
+    height: 5px;
+    width: 10%;
+    background-color: #000;
+}
+
+
+.description {
+    width: 50%;
+}
+
+.width1 {
+    width: 50%;
+}
+
+.width2 {
+    width: 60%;
+}
+
+.width3 {
+    width: 80%;
+}
+
+.width4 {
+    width: 70%;
+}
+
+.pointer:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .description {
+        width: 60%;
+    }
+
+    .width1 {
+        width: 80%;
+    }
+
+    .width2 {
+        width: 80%;
+    }
+
+    .width4 {
+        width: 80%;
+    }
+    .bodyDiv {
+        margin-left: 0px;
+        padding: 0 12px;
+    }
+}
+
+
+.my_card{
+    height: 48px;
+    margin: 6px 0px;
+}
+
+.fs-7{
+    font-size: 12px;
+}
+
+.fs-6_5{
+    font-size: 14px;
+}
+
+.appbar{
+    height: 24px;
+    width: 24px;
+}
+
+.index{
+    z-index: 1000;
+}

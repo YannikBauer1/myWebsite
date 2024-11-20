@@ -1,0 +1,119 @@
+.timeline {
+    border-left: 2px solid #000000;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    margin: 0 auto;
+    margin-left: 100px;
+    position: relative;
+    padding: 24px;
+    list-style: none;
+    text-align: left;
+}
+
+.custom_card{
+    margin:12px 0px !important;
+    padding-right: 100px !important;
+    padding-left: 12px !important;
+}
+
+.twoLines{
+    max-height: 60px;
+    overflow: hidden;
+}
+
+.timelineItem {
+    position: relative;
+    padding: 0 16px;
+}
+
+.timelineItem:before,
+.timelineItem:after {
+    position: absolute;
+    display: block;
+    top: 17%;
+}
+
+@media (max-width: 576px) {
+    .twoLines{
+        max-height: 50px;
+        overflow: hidden;
+    }
+    .timelineItem {
+        padding: 16px 8px !important;
+    }
+    .timelineItem:after {
+        height: 5px !important;
+        width: 5px !important;
+        left: -25px !important;
+    }
+    .timeline {
+        border-left: 2px solid #000000 !important;
+        padding: 20px !important;
+        margin-left: 75px !important;
+    }
+    .timelineItem {
+        margin-bottom: 25px;
+        position: relative;
+        padding-bottom:0px !important;
+        padding-top: 0px !important;
+        padding-right: 3rem;
+        padding-left: 1rem;
+        font-size: x-small;
+    }
+    .timelineItem:before {
+        left: -155px !important;
+        font-size: 10px !important;
+    }
+}
+
+.timelineItem:before {
+    left: -165px;
+    color:#000000;
+    top:15px;
+    content: attr(data-date);
+    text-align: right;
+    min-width: 120px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.timelineItem:after {
+    -webkit-box-shadow: 0 0 0 3px #000000;
+    box-shadow: 0 0 0 3px #000000;
+    left: -30px;
+    background: #000000;
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+    content: "";
+    top: 20px;
+}
+
+.progressBackground {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.progressBackground::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(135deg,
+            rgba(120, 120, 120, 0.5) 25%,
+            rgba(160, 160, 160, 0.5) 25%,
+            rgba(160, 160, 160, 0.5) 50%,
+            rgba(120, 120, 120, 0.5) 50%,
+            rgba(120, 120, 120, 0.5) 75%,
+            rgba(160, 160, 160, 0.5) 75%);
+    background-size: 20px 20px;
+    pointer-events: none;
+    /* Allows clicks to pass through */
+}
