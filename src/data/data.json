@@ -189,6 +189,26 @@
           "inescTec.png",
           "fcup.png"
         ],
+        "time": "2024 -",
+        "timeComplete": "Sep. 2024 -",
+        "details": {
+          "description": "The project aims is to provide a framework for application of gamification to programming education, including creating a demo course and researching LLMs for course content generation.",
+          "material": [
+            "Created a demo course for the FGPE++ project",
+            "Researched LLMs for course content generation"
+          ]
+        }
+      },
+      {
+        "title": "FGPE+ Gamified Programming Learning",
+        "type": "Research Grant",
+        "completeTitle": "FGPE++ Gamified Programming Learning - Research Grant",
+        "location": "Inesc Tec",
+        "locationImage": "inescTec.png",
+        "images": [
+          "inescTec.png",
+          "fcup.png"
+        ],
         "time": "2022 - 2023",
         "timeComplete": "Mai 2022 - Mai 2023",
         "details": {
