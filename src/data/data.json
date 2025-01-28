@@ -51,6 +51,26 @@
     ],
     "educations": [
       {
+        "title": "Personal Finance MBA",
+        "completeTitle": "Personal Finance MBA",
+        "degree": "Certificate",
+        "connector": "",
+        "in": "Personal Finance MBA",
+        "link": "https://magmastudio.pt/",
+        "location": "Escola das Finanças",
+        "locationImage": "magma.png",
+        "time": "2024",
+        "details": {
+          "description": "A Financial Literacy Program created to help you better manage your finances and financial situation.",
+          "grade": "100%",
+          "material": [
+            "Employment Contracts, Green Receipts, and Isolated Acts",
+            "Income Tax (IRS) and Young IRS",
+            "Personal Finances, Financial Management, Savings, and Investments"
+          ]
+        }
+      },
+      {
         "title": "English as a Second Language",
         "completeTitle": "ESL - English as a second language",
         "degree": "Certificate",
